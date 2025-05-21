@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<style>
+	.hide {
+  		display: none;
+	}	
+ 	/* hover for images */
+	.myDIV:hover + .hide {
+  		display: block;
+	}
+	/*hover for text */
+	.list_style:hover {
+    	color: white;
+    	font-style: oblique;
+    	background-color: #00780a;
+	}
+	/* location of image */
+	#location {
+  		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	/* location of text */
+	#textlocation {
+		position: fixed;
+		top: 95%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	/* for top table menu */
+	.center {
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.box {
+  		background-color: lightgrey;
+  		width: 100px;
+  		border: 1px #00780a;
+  		padding: 0px;
+  		margin: 5px;
+}
+</style>
+
+<head>
+</head>
+
+	<table class="center">
+  <tr> 
+    <th><div class="box">
+		<a href="index.html">home</a>
+	</div></th>
+    <th><div class="box" style="border:10px solid green">
+		<a href="paintpage.html">painting</a>
+	</div></th>
+    <th>	<div class="box">
+		<a href="paintpage.html">painting</a>
+	</div></th>
+  </tr>
+</table>
+
+<body>
+<div class="myDIV list_style">
+	Nuclear War IKEA
+</div>
+	<div class="hide"><img id="location" src="chair.jpg" height="500" width="220">
+		<div id="textlocation">50" x 22" oil on canvas (2025)
+		</div>
+	</div>
+<div class="myDIV list_style">
+	Drove Kine Fold
+</div>
+	<div class="hide"><img id="location" src="cow1.jpg" height="260" width="300">
+		<div id="textlocation">16" x 20" oil on canvas (2025)
+		</div>
+	</div>
+
+<div class="myDIV list_style">
+	Mike And The Burning Job Board
+</div>
+	<div class="hide"><img id="location" src="fence2.jpg" height="220" width="500">
+		<div id="textlocation"> 22" x 50" oil on canvas (2025)
+		</div>
+	</div>
+
+<div class="myDIV list_style">
+	Neolithic Age Primitive Barriers
+</div>
+	<div class="hide"><img id="location" src="fence1.jpg" height="210" width="240">
+		<div id="textlocation">11" x 14" oil on board (2025)
+		</div>
+	</div>
+</body>
+</html>
